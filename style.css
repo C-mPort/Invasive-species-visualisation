@@ -1,0 +1,126 @@
+/* ========================================
+   style for data journalism assignment
+========================================== */
+
+/* Font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Hide all tabs by default */
+.tab-content {
+    display: none;
+}
+
+/* Show only the active tab (no flex here!) */
+.tab-content.active {
+    display: block;
+    padding: 20px;
+    border: 1px solid #F8D775;
+    border-radius: 0 7px 7px 7px;
+    background: white;
+    position: relative;
+    top: -1px;
+    background: #FFE9A2
+}
+
+/* Add spacing below titles */
+.tab-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Correct flex layout */
+.content-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Column sizing */
+.left-column,
+.right-column {
+    flex: 1 1 auto;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+
+/* Left column – chart */
+.left-column img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    aspect-ratio: 3 / 2;
+}
+
+/* Right column */
+.animal-image img {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    display: block;
+    align-self: center;
+    justify-content: center;
+    aspect-ratio: 3 / 2;
+}
+
+/* full-width side box*/ 
+.full-width-info {
+    width: 100%;
+    margin-top: 20px;
+    padding; 15px;
+    border: 1px solid #F8D775;
+    background: #F8D775;
+    text-align: left;
+}
+    
+
+/* Folder-style tabs */
+.tabs {
+    display: flex;
+    gap: 2px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: #F8D775;
+    border: 1px solid #F8D775;
+    border-bottom: none;
+    border-radius: 7px 7px 0 0;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    top: 5px;
+    z-index: 1;
+}
+
+.tab-btn.active {
+    background: #FFE9A2;
+    border-bottom: 1px #F8D775;
+    z-index: 2;
+    top: 0;
+}
+
+.tab-btn:hover {
+    background: #FFE9A2;
+}
+
+/* Font sizes */
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}

@@ -1,0 +1,116 @@
+<!------ This is the coding for data journalism assignment 2 --------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Species Population Visualisation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('squirrel')">Grey Squirrel</button>
+        <button class="tab-btn" onclick="openTab('deer')">Muntjac Deer</button>
+        <button class="tab-btn" onclick="openTab('goose')">Egyptian Goose</button>
+    </div>
+
+    <!-- Grey Squirrel Tab -->
+    <div id="squirrel" class="tab-content active">
+        <h2>Eastern Grey Squirrel (<i>Sciurus carolinensis</i>)</h2>
+
+        <div class="content-row">
+            <div class="left-column">
+                <figure>
+                    <img src="Greysquirrelchart.png" alt="Confirmed and considered confirmed sightings of eastern grey squirrels across the UK" />
+                    <figcaption><i>Data gathered from NBN Atlas</i></figcaption>
+                </figure>
+            </div>
+
+            <div class="right-column">
+                <div class="animal-image">
+                    <figure>
+                        <img src="Greysquirrel.jpg" alt="Eastern Grey Squirrel, Sciurus carolinensis. Photo by Andy Willis on Unsplash" />
+                        <figcaption><i>Photo by Andy Willis on Unsplash</i></figcaption> 
+                    </figure> 
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width-info">
+            <h3>Species Info</h3>
+            <p><strong>Name:</strong> Eastern Grey Squirrel / Grey Squirrel</p>
+            <p><strong>Scientific Name:</strong> Sciurus carolinensis</p>
+            <p><strong>Native Range:</strong> Native to Eastern North America and Southeastern Canada</p>
+            <p><strong>How they entered the UK:</strong> Were brought over in the late 1800s to populate wealthy Victorian estates and later spread across the country.
+            <p><strong>Environmental Impact:</strong> Caused localised extinctions of native red squirrels across most of England; Wales; and Northern Ireland, damage to fruit crops, eating native bird species eggs and destroying nests, stripping bark from trees which can kill trees.</p>
+        </div>
+    </div>
+
+    <!-- Muntjac Deer Tab -->
+    <div id="deer" class="tab-content">
+        <h2>Muntjac Deer (<i>Muntiacus reevesi</i>)</h2>
+
+        <div class="content-row">
+            <div class="left-column">
+                <figure>
+                    <img src="Muntjacdeerchart.png" alt="Confirmed and considered confirmed sightings of muntjac deer across the UK" />
+                    <figcaption><i>Data gathered from NBN Atlas</i></figcaption>
+                </figure>
+            </div>
+
+            <div class="right-column">
+                <div class="animal-image">
+                    <figure>
+                        <img src="Muntjacdeer.jpg" alt="Muntjac Deer, Muntiacus reevesi" />
+                        <figcaption><i>Photo by Klub Boks on Pexels</i></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width-info">
+            <h3>Species Info</h3>
+            <p><strong>Name:</strong> Muntjac Deer / Barking Deer / Rib-faced Deer</p>
+            <p><strong>Scientific Name:</strong> Muntiacus reevesi</p>
+            <p><strong>Native Range:</strong> China, Taiwan, India, and parts of Southeast Asia</p>
+            <p><strong>How they entered the UK:</strong> Were brought over to a safari park in Woburn Abbey in the early 1900s. After a couple of years, they escaped the park and feral populations were established.</p>
+            <p><strong>Environmental Impact:</strong> Damage to young trees, shrubs, and woodland flora caused by grazing, linked to declines in native bird species such as nightingales due to habitat alteration.</p>
+        </div>
+    </div>
+
+    <!-- Egyptian Goose Tab -->
+    <div id="goose" class="tab-content">
+        <h2>Egyptian Goose (<i>Alopochen aegyptiaca</i>)</h2>
+
+        <div class="content-row">
+            <div class="left-column">
+                <figure>
+                    <img src="Egyptiangoosechart.png" alt="Confirmed and considered confirmed sightings of Egyptian Geese across the UK" />
+                    <figcaption><i>Data gathered from NBN Atlas</i></figcaption>
+                </figure>
+            </div>
+
+            <div class="right-column">
+                <div class="animal-image">
+                    <figure>
+                        <img src="egyptiangoose.jpg" alt="Egyptian Goose, Alopochen aegyptiaca. Photo by Peter Hoogmoed on Unsplash" />
+                        <figcaption><i>Photo by Peter Hoogmoed on Unspalsh</i></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width-info">
+            <h3>Species Info</h3>
+            <p><strong>Name:</strong> Egyptian Goose / Fox Goose</p>
+            <p><strong>Scientific Name:</strong> Alopochen aegyptiaca</p>
+            <p><strong>Native Range:</strong> Africa, specifically the Nile valley and South Saharan desert </p>
+            <p><strong>How they entered the UK:</strong> Were brought over in the late 1800s to populate wealthy Victorian estates and later spread across the country.</p>
+            <p><strong>Environmental Impact:</strong> Risk of hybridisation with native geese, damage to grasslands and crops, water pollution from droppings leading to oxygen depletion and threats to aquatic life. Can also pose health risks to humans (linked to E. coli, toxoplasmosis, and avian influenza).</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
